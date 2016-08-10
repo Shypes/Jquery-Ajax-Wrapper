@@ -7,14 +7,10 @@ A javascript wrapper that let you manage multiple jquery ajax call and process t
 
 ## Basic Usage
 
-  $.shypesjax({
-    caller: 'appcaller',
-    application: 'project',
-    data:{task:'deleteUser',user:10},
-    success: function (response){
-    		alert(response)
-    },
-    error: function (xhr, status){
-    	
-    }
-  });
+  $.shypesjax({  
+      caller: 'appcaller',  
+      application: 'project',  
+      data:{task:'deleteUser',user:10},  
+      success: function (response){console.log(response)},  
+      error:function(xhr, status){ }   
+  }); 
